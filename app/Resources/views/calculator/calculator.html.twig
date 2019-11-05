@@ -1,0 +1,21 @@
+{{  form_start(form) }}
+
+<div>
+    {{ form_label(form.firstNumber) }}
+    {{ form_errors(form.firstNumber) }}
+    {{ form_widget(form.firstNumber) }}
+</div>
+<div>
+    {{ form_label(form.operand) }}
+    {{ form_errors(form.operand) }}
+    {{ form_widget(form.operand) }}
+</div>
+<div>
+    {{ form_label(form.secondNumber) }}
+    {{ form_errors(form.secondNumber) }}
+    {{ form_widget(form.secondNumber) }}
+</div>
+
+{{ form_rest(form) }}
+{{ form_end(form) }}
+{{ result }}
